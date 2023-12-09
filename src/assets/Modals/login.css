@@ -1,0 +1,104 @@
+
+
+.container .text{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.container form .data{
+  height: 30px;
+  width: 100%;
+  margin: 40px 0;
+}
+.login-label{
+  direction: unset;
+  text-align: right;
+  width: 100%;
+    color: #404040;
+    font-size: 12px;
+    font-style: normal;
+   
+}
+.form-signin{
+  height: 100%;
+  width: 100%;
+  padding-right: 10px;
+  font-size: 10px;
+  text-align: end;
+  border: 0.5px solid #404040!important;
+  border-radius: 0px !important;
+}
+.form-signin::placeholder{
+    font-size: 10px;
+
+}
+.form-signin:focus{
+    border: 0.5px solid #404040!important;
+    border-bottom-width: 2px;
+    box-shadow: none !important;
+}
+form .forgot-pass{
+  margin-top: -8px;
+}
+form .forgot-pass a{
+  color: #3498db;
+  text-decoration: none;
+}
+form .forgot-pass a:hover{
+  text-decoration: underline;
+}
+
+.close-modal{
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .x-close{
+    width: 11px;
+    height: 11px;
+  }
+
+.logo-modal{
+    width: 50px;
+   
+}
+
+.btn-login{
+   
+    background-color: #f53d33;
+   
+
+}
+.border-menu{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.menu-modal{
+font-size: 14px;
+text-decoration: none;
+color: white;
+font-weight: 600;
+}
+.bg-menu-modal{
+  background-color: #14543a !important; /* Set the background color of the body */
+}
+@media screen and (max-width: 540px) {
+  .container .text{
+    font-size: 14px;
+    
+  }
+  
+  .container form .data{
+    height: 20px;
+  
+    margin: 40px 0;
+  }
+  .login-label{
+    text-align: right;
+    width: 100%;
+      color: #404040;
+      font-size: 10px;
+      font-style: normal;
+     
+  }
+}

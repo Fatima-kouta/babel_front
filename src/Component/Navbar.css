@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+ 
+ 
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#logo {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#login {
+
+  visibility: hidden;
+}
+
+
+#burger-menu {
+  display: block;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5em;
+}
+#login {
+  visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  #burger-menu {
+    display: block;
+}
+
+ 
+}
+
+
+
+.homepage-box .header {
+  background-color: #fff;
+  color: white;
+  padding: 10px 0;
+}
+
+.homepage-box .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    flex-direction: row-reverse;
+}
+
+.homepage-box .navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  z-index: 999;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  flex-direction: row-reverse;
+}
+
+.homepage-box .navbar a {
+  color: #fff !important;
+  text-decoration: auto;
+}
+
+.homepage-box .close-icon {
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+  width:100%;
+}
+
+.homepage-box .logo img {
+  display: block;
+  width: 100px;
+  text-align: center;
+  height: 100%; /* Make the logo fill the height of the header */
+  max-height: 100%;
+  margin: 0;
+  flex: 1;
+}
+
+.homepage-box .login {
+    flex: 1 1;
+    order: -1;
+    margin-top: auto;
+    color: #000;
+    text-align: left;
+}
+
+
+.homepage-box .slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: -30px;
+}
+
+@media only screen and (max-width: 768px) {
+  
+
+  .homepage-box .icon {
+    display: block;
+    visibility: visible;
+    color: #000;
+    flex: 0;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .homepage-box .close-icon {
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    margin-right: -12px;
+}
+  .homepage-box .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .homepage-box .navbar.show {
+    display: flex;
+  }
+  .homepage-box .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 0px!important;
+  }
+}
+
+.homepage-box .navbar.show a {
+    padding: 10px;
+    text-align: ri!important;
+    border-bottom: 1px solid #747474;
+    margin-left: auto;
+    width: 100%;
+}
+
+.homepage-box .header.hidden {
+  display: none;
+}
+@media only screen and (max-width: 530px) {
+  .logo{
+    width: 50px !important;
+  }
+  .homepage-box .container-header{
+    
+  } 
+}
+.logo{
+  width: 150px;
+}
+.navbar-Title{
+  color: #14543a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.image-container {
+  position: relative;
+ 
+}
+
+
+.overlay-text {
+  /* position: absolute; */
+  /* bottom: -18%;
+  right: 1%; */
+
+  transform: translate(-34%, -10%);
+  color: #14543a;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.authentication-text{
+  border: 0px;
+  background-color: transparent;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media screen and (max-width: 540px) {
+  .navbar-Title{
+      color: #14543a;
+      font-size: 12px;
+  }
+  .logo{
+      width: 100px;
+  }
+  .authentication-text {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.overlay-text{
+  font-size: 10px;
+  transform: translate(-34%, 0%);
+
+}
+#burger-menu {
+  display: block;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5em;
+}
+}

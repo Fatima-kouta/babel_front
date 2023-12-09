@@ -1,0 +1,77 @@
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(33.33% - 20px), 1fr));
+  grid-template-rows: auto;
+  gap: 28px;
+  align-items: stretch;
+  border-radius: 7px !important;
+}
+
+/* Styling for individual cards */
+.card {
+
+ 
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 7px !important;
+
+}
+
+.card-categ{
+  font-size:30px !important;
+text-align: right !important;
+  color: #f53d33 !important;
+  font-weight: 600 !important;
+}
+.bg-btn-green{
+  background-color: #2fb590;
+}
+/* Styling for the first card with double height */
+.card:first-child {
+  grid-row: span 2;
+}
+
+/* Styling for card images */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-right-radius: 7px !important;
+  border-top-left-radius: 7px !important;
+
+}
+
+/* Styling for card titles */
+.card-title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Media query for tablets: 2 cards per row with equal size */
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+  }
+
+  .card {
+      grid-row: auto;
+  }
+
+  .card:first-child {
+      grid-row: auto;
+  }
+  .card-categ{
+    font-size:20px !important;
+  text-align: right !important;
+    color: #f53d33 !important;
+    font-weight: 600 !important;
+  }
+}
+@media (max-width: 500px) {
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+}
